@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Chinese Zodiac</string>
+    <string name="title_activity_find_zodiax">FindZodiaxActivity</string>
+</resources>

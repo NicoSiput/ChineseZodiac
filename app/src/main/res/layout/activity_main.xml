@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding15"
+                    android:layout_marginTop="@dimen/padding15"
+                    android:text="Date"
+                    android:textSize="@dimen/sizeTxt15" />
+
+                <!--                    Start cardview date-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding15"
+                    android:layout_marginRight="@dimen/padding15"
+
+                    app:cardCornerRadius="@dimen/padding10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_dateYesterday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding5"
+                            android:gravity="center"
+                            android:text="Yesterday"
+                            android:textColor="@color/disable"
+                            android:textSize="@dimen/sizeTxt20" />
+
+                        <TextView
+                            android:id="@+id/tv_dateToday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding5"
+                            android:gravity="center"
+                            android:text="Today"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/sizeTxt20" />
+
+                        <TextView
+                            android:id="@+id/tv_dateTomorrow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding5"
+                            android:gravity="center"
+                            android:text="Tomorrow"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sizeTxt20" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--                    End cardview date-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding15"
+                    android:layout_marginTop="@dimen/padding15"
+                    android:text="This Zodiac of Year"
+                    android:textSize="@dimen/sizeTxt15" />
+
+                <!-- Start cardview Zodiac of Year-->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding15"
+                    android:layout_marginRight="@dimen/padding15"
+                    app:cardCornerRadius="@dimen/padding10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding5"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_zodiac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:src="@drawable/question"/>
+
+                        <TextView
+                            android:id="@+id/tv_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/padding10"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sizeTxt25"
+                            android:fontFamily="@font/colab_lig"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <!--                    End cardview Zodiac of Year-->
+
+                <Button
+                    android:id="@+id/btn_findZodiacByYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding15"
+                    android:background="@color/buttonBlue"
+                    android:textColor="@color/white"
+                    android:text="Find Zodiac by Year" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

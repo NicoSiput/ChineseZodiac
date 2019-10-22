@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- List textSize -->
+    <dimen name="sizeTxt10">10sp</dimen>
+    <dimen name="sizeTxt14">14sp</dimen>
+    <dimen name="sizeTxt15">15sp</dimen>
+    <dimen name="sizeTxt16">16sp</dimen>
+    <dimen name="sizeTxt17">17sp</dimen>
+    <dimen name="sizeTxt18">18sp</dimen>
+    <dimen name="sizeTxt20">20sp</dimen>
+    <dimen name="sizeTxt25">25sp</dimen>
+    <dimen name="sizeTxt30">30sp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding5">5dp</dimen>
+    <dimen name="padding8">8dp</dimen>
+    <dimen name="padding10">10dp</dimen>
+    <dimen name="padding15">15dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
