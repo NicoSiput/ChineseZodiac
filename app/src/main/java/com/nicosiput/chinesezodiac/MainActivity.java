@@ -1,6 +1,7 @@
 package com.nicosiput.chinesezodiac;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,9 +21,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
-    Button btnFindZodiacByYear;
+    Button btnFindZodiacByYear, btnConverterDate;
     TextView tvDateYesterday, tvDateToday, tvDateTomorrow, tvDesc;
     ImageView ivZodiac;
 
@@ -39,11 +40,20 @@ public class MainActivity extends AppCompatActivity {
         ivZodiac = (ImageView) findViewById(R.id.iv_zodiac);
         tvDesc = (TextView) findViewById(R.id.tv_desc);
         btnFindZodiacByYear = (Button) findViewById(R.id.btn_findZodiacByYear);
+        btnConverterDate = (Button) findViewById(R.id.btn_converterDate);
 
         btnFindZodiacByYear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(getApplicationContext(), FindZodiacActivity.class);
+                startActivity(in);
+            }
+        });
+
+        btnConverterDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getApplicationContext(), ConverterActivity.class);
                 startActivity(in);
             }
         });
